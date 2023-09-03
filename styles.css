@@ -1,0 +1,201 @@
+
+/* global styles */
+
+/* html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  } */
+
+body{
+    color:#ff8c42;
+    margin: 0 auto;
+    padding: 0; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    
+}
+
+img{
+    width:300px;
+}
+
+a {
+    color: white;
+}
+
+a:hover{
+    color: rgb(255, 251, 0);
+}
+
+.divider > section {
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+  }
+  .divider > section:last-of-type {
+    border-bottom: none;
+  }
+  
+/* profile */
+
+header{
+    background:#172875;
+    color: white;
+    
+}
+
+/* projects */
+.projects{
+    background: #fcfaf7;
+    
+}
+
+.projects a:hover{
+    color: rgb(255, 251, 0,1);
+    background: rgb(4, 0, 250,0.8);
+}
+
+.projects a{
+    background: rgb(4, 0, 250);
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.projects h2{
+    margin: 0;
+}
+
+/* work experience */
+.work-experience{
+    background:  #eb2c2c;
+    color: white;
+}
+
+/* education */
+.education{
+    background-image: url(../img/joanna-kosinska-unsplash.jpg);
+    background-position: top right;
+    padding: 100px;
+    background-size: cover;
+}
+
+.education p{
+    width: 60%;
+}
+
+/* contact info */
+footer{
+    background: #494745ec;
+    
+}
+
+/* content-wrap */
+
+.content-wrap{
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+/* fonts for projects and education */
+
+.bla{
+    color: #000!important;
+}
+
+h1{
+    font-size: 100px;
+    line-height: 1;
+}
+
+h2{
+    font-size: 45px;
+}
+
+h1,h2{
+    font-family: 'Caveat Brush', cursive;
+    margin: 0;
+    font-weight: 400;
+
+}
+
+
+.project-item{
+    overflow: hidden;
+   
+}
+
+.contact{
+    list-style: none;
+    padding: 0;
+}
+
+.contact a{
+    padding: 15px;
+    display: inline-block;
+    
+}
+
+
+
+h3{
+    margin-bottom: 0;
+}
+.item-det h3+p{
+    font-style: italic;
+}
+
+.item-det h3~p{
+    margin: 0;
+}
+
+.job-det{
+    padding: 0;
+    margin-top: 0px;
+}
+
+.goleft{
+    margin-left: 0;
+}
+
+@media screen and (min-width:750px) {
+    header,footer{
+
+        text-align: center;
+    }
+
+    .project-item img{
+        float: left;
+        margin: 20px 20px 20px 0;
+    }
+
+    .job-item{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    
+    .contact{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:749px){
+    h1 {
+      font-size: 75px;
+      line-height: 0.9;
+      margin-bottom: 20px;
+    }
+    h2 {
+      line-height: 1;
+    }
+    .contact-list a {
+      padding: 5px;
+    }
+  }
